@@ -1,6 +1,9 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    id("org.jetbrains.kotlin.kapt")
+    id("org.jetbrains.kotlin.plugin.parcelize")
+    alias(libs.plugins.dagger.hilt.android)
 }
 
 android {
@@ -30,11 +33,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"
     }
     buildFeatures {
         compose = true
@@ -59,6 +62,44 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+
+    // Hilt dependencies
+    implementation(libs.hilt.android) // Add Hilt runtime dependency
+    kapt(libs.hilt.android.compiler) // Add Hilt compiler dependency
+    implementation(libs.hilt.navigation.compose)
+
+    //splash screen API
+    implementation(libs.core.splashscreen)
+
+    // Compose Navigation
+    implementation(libs.navigation.compose)
+
+    // Retrofit for networking
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+
+    // Coil for image loading
+    implementation(libs.coil.compose)
+
+    // Datastore Preferences
+    implementation(libs.datastore.preferences)
+
+    // Compose Foundation
+    implementation(libs.compose.foundation)
+
+    // Accompanist for system UI control
+    implementation(libs.accompanist.systemuicontroller)
+
+    // Paging 3 for pagination
+    implementation(libs.paging.runtime)
+    implementation(libs.paging.compose)
+
+    // Room for local database
+    implementation(libs.room.runtime)
+    kapt(libs.room.compiler)
+    implementation(libs.room.ktx)
+
+    // test dependencies
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
