@@ -1,5 +1,6 @@
 package com.example.composenews.presentation.onboarding
 
+import android.util.Log
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -28,7 +29,10 @@ import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
-fun OnboardingScreen() {
+fun OnboardingScreen(
+    event: (OnboardingEvent) -> Unit
+) {
+    Log.d("text", "inside OBScreen composable with event:  ${event.toString()}")
     Column(modifier = Modifier.fillMaxSize()) {
         val pagerState = rememberPagerState(initialPage = 0) {
             pages.size
@@ -78,12 +82,15 @@ fun OnboardingScreen() {
                     )
                 }
 
+                Log.d("text", "Above NewsButton:  ${event.toString()}")
                 NewsButton(
                     text = buttonState.value[1],
                     onClick = {
+                        Log.d("text", "inside onClick callback of NewsButton:  ${event.toString()}")
                         scope.launch {
-                            if (pagerState.currentPage == 3) {
-                                // navigate into home screen
+                            if (pagerState.currentPage == 2) {
+                                //navigate into the app by saving app entry
+                                event(OnboardingEvent.SaveAppEntry)
                             } else {
                                 pagerState.animateScrollToPage(page = pagerState.currentPage + 1)
                             }

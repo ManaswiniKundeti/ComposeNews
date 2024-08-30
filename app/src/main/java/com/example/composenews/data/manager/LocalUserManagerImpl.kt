@@ -1,6 +1,7 @@
 package com.example.composenews.data.manager
 
 import android.content.Context
+import android.util.Log
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.booleanPreferencesKey
@@ -20,6 +21,7 @@ class LocalUserManagerImpl(
     private val context: Context
 ) : LocalUserManager{
     override suspend fun saveAppEntry() {
+        Log.d("LocalUserManagerImpl", "Saving app entry as true")
        context.dataStore.edit { settings ->
            settings[PreferencesKeys.APP_ENTRY] = true
        }
