@@ -32,7 +32,6 @@ import kotlinx.coroutines.launch
 fun OnboardingScreen(
     event: (OnboardingEvent) -> Unit
 ) {
-    Log.d("text", "inside OBScreen composable with event:  ${event.toString()}")
     Column(modifier = Modifier.fillMaxSize()) {
         val pagerState = rememberPagerState(initialPage = 0) {
             pages.size
@@ -81,12 +80,9 @@ fun OnboardingScreen(
                         }
                     )
                 }
-
-                Log.d("text", "Above NewsButton:  ${event.toString()}")
                 NewsButton(
                     text = buttonState.value[1],
                     onClick = {
-                        Log.d("text", "inside onClick callback of NewsButton:  ${event.toString()}")
                         scope.launch {
                             if (pagerState.currentPage == 2) {
                                 //navigate into the app by saving app entry

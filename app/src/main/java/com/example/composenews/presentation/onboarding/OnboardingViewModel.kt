@@ -15,7 +15,6 @@ class OnboardingViewModel @Inject constructor(
 ): ViewModel() {
 
     fun onEvent(event: OnboardingEvent) {
-        Log.d("text", "Event triggered: $event")
         when(event) {
             is OnboardingEvent.SaveAppEntry -> {
                 saveAppEntry()
