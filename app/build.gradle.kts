@@ -66,7 +66,7 @@ dependencies {
     implementation(libs.androidx.compose.ui.graphics)
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.material3)
-    implementation(libs.androidx.paging.common.android)
+//    implementation(libs.androidx.paging.common.android)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
@@ -89,6 +89,7 @@ dependencies {
 
     // Retrofit
     implementation(libs.retrofit)
+    implementation(libs.retrofit.gson.converter)
     implementation(libs.retrofit.serialization.converter)
 
     // Kotlinx Serialization
