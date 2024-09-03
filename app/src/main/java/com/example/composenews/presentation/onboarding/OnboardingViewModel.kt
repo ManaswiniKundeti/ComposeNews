@@ -1,10 +1,8 @@
 package com.example.composenews.presentation.onboarding
 
-import android.util.Log
-import android.util.Log.*
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.composenews.domain.usecases.AppEntryUsecases
+import com.example.composenews.domain.usecases.appEntry.AppEntryUsecases
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject

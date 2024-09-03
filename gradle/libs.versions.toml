@@ -18,7 +18,10 @@ coil = "2.4.0"
 datastore = "1.0.0"
 composeFoundation = "1.4.3"
 accompanist = "0.31.4-beta"
-hilt-navigation-compose = "1.0.0"
+hiltNavigationCompose = "1.0.0"
+pagingVersion = "3.1.1"
+pagingCompose = "3.2.0-rc01"
+pagingCommonAndroid = "3.3.2"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -47,4 +50,7 @@ coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coi
 datastore-preferences = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "datastore" }
 compose-foundation = { group = "androidx.compose.foundation", name = "foundation", version.ref = "composeFoundation" }
 accompanist-systemuicontroller = { group = "com.google.accompanist", name = "accompanist-systemuicontroller", version.ref = "accompanist" }
-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hilt-navigation-compose" }
+hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
+paging-runtime = { group = "androidx.paging", name = "paging-runtime", version.ref = "pagingVersion" }
+paging-compose = { group = "androidx.paging", name = "paging-compose", version.ref = "pagingCompose" }
+androidx-paging-common-android = { group = "androidx.paging", name = "paging-common-android", version.ref = "pagingCommonAndroid" }

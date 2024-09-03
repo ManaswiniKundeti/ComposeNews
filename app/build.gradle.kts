@@ -66,6 +66,7 @@ dependencies {
     implementation(libs.androidx.compose.ui.graphics)
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.paging.common.android)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
@@ -104,4 +105,9 @@ dependencies {
 
     // Accompanist
     implementation(libs.accompanist.systemuicontroller)
+
+    //Paging 3
+    implementation(libs.paging.runtime)
+    implementation(libs.paging.compose)
+
 }
