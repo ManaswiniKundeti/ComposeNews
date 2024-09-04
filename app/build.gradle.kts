@@ -111,4 +111,9 @@ dependencies {
     implementation(libs.paging.runtime)
     implementation(libs.paging.compose)
 
+    //Room
+    implementation(libs.room.runtime)
+    kapt(libs.room.compiler)
+    implementation(libs.room.ktx)
+
 }
