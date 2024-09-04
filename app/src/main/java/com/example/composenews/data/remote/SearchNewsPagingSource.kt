@@ -3,13 +3,13 @@ package com.example.composenews.data.remote
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
 import com.example.composenews.domain.model.Article
-import com.example.composenews.util.Constants.API_KEY
 
-// remote paging source
-class NewsPagingSource (
+class SearchNewsPagingSource (
     val newsApi: NewsApi,
-    val sources: String
+    val sources: String,
+    val searchQuery: String
 ): PagingSource<Int, Article>() {
+
     override fun getRefreshKey(state: PagingState<Int, Article>): Int? {
         return state.anchorPosition?.let { anchorPosition ->
             val anchorPage = state.closestPageToPosition(anchorPosition)
@@ -24,7 +24,7 @@ class NewsPagingSource (
         // 1: get page using params
         val page = params.key ?: 1
         return try {
-            val newsResponse = newsApi.getNews(page = page, sources = sources)
+            val newsResponse = newsApi.searchNews(page = page, sources = sources, searchQuery = searchQuery)
             totalNewsCount += newsResponse.articles.size
             val distinctArticles = newsResponse.articles.distinctBy { it.title } // filters distinct articles based on title as there are duplicates in the overall response
             LoadResult.Page(
@@ -38,4 +38,5 @@ class NewsPagingSource (
         }
         //
     }
+
 }

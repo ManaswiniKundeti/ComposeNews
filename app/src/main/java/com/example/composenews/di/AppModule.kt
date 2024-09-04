@@ -11,6 +11,7 @@ import com.example.composenews.domain.usecases.appEntry.ReadAppEntry
 import com.example.composenews.domain.usecases.appEntry.SaveAppEntry
 import com.example.composenews.domain.usecases.news.GetNews
 import com.example.composenews.domain.usecases.news.NewsUsecases
+import com.example.composenews.domain.usecases.news.SearchNews
 import com.example.composenews.util.Constants.BASE_URL
 import dagger.Module
 import dagger.Provides
@@ -62,7 +63,8 @@ object AppModule {
         newsRepository: NewsRepository
     ) : NewsUsecases {
         return NewsUsecases(
-            getNews = GetNews(newsRepository)
+            getNews = GetNews(newsRepository),
+            searchNews = SearchNews(newsRepository)
         )
     }
 }
