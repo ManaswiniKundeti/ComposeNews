@@ -51,7 +51,7 @@ Go to the [Releases](https://github.com/ManaswiniKundeti/ComposeNews/releases) t
 ## Architecture
 Compose News is based on the latest Googles recommended architecture pattern that focuses on unidirectional data flow. Details on the architecture can be found [here](https://developer.android.com/topic/architecture)
 
-<img src="https://github.com/user-attachments/assets/c3794d29-1cb5-4ebf-a714-6f7d1a02735a" width=320 height=400>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/user-attachments/assets/879270bf-e868-4c4f-abd0-8d8202b6ed61" width=250 height=400>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/user-attachments/assets/c5b9f206-1922-4e34-b9f0-1575a40b51be" width=250 height=400>&nbsp;&nbsp;&nbsp;
+<img src="https://github.com/user-attachments/assets/c3794d29-1cb5-4ebf-a714-6f7d1a02735a" width=300 height=400>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/user-attachments/assets/879270bf-e868-4c4f-abd0-8d8202b6ed61" width=250 height=400>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/user-attachments/assets/c5b9f206-1922-4e34-b9f0-1575a40b51be" width=250 height=400>&nbsp;&nbsp;&nbsp;
 
 ## API
 
