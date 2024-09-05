@@ -36,12 +36,12 @@ Go to the [Releases](https://github.com/ManaswiniKundeti/ComposeNews/releases) t
 ## Open-source libraries
 - Minimum SDK level 33
 - [Kotlin](https://kotlinlang.org/)
-- Flow
+- [Flow](https://developer.android.com/kotlin/flow)
 - JetPack
-  - Compose
+  - [Compose](https://developer.android.com/compose)
   - ViewModel
   - Room
-  - Navigation Component
+  - [Navigation](https://developer.android.com/jetpack/androidx/releases/navigation)
 - Architecture
   - MVVM Architecture (View - ViewModel - Model)
   - Repository pattern
