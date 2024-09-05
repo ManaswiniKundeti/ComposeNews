@@ -24,7 +24,7 @@ class BookmarkViewModel @Inject constructor(
 
     private fun getArticles(){
         newsUsecases.getArticles().onEach {
-            _bookmarkState.value = _bookmarkState.value.copy(articles = it)
+            _bookmarkState.value = _bookmarkState.value.copy(articles = it.asReversed())
         }.launchIn(viewModelScope)
     }
 }

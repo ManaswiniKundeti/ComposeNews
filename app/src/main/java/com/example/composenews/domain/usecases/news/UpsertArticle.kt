@@ -2,12 +2,13 @@ package com.example.composenews.domain.usecases.news
 
 import com.example.composenews.data.local.NewsDao
 import com.example.composenews.domain.model.Article
+import com.example.composenews.domain.repository.NewsRepository
 
 class UpsertArticle(
-    private val newsDao: NewsDao
+    private val newsRepository: NewsRepository
 ) {
 
     suspend operator fun invoke(article: Article) {
-        return newsDao.upsert(article)
+        return newsRepository.upsertArticle(article)
     }
 }
