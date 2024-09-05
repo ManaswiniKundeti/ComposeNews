@@ -44,7 +44,7 @@ fun BookmarkScreen(
 
         ArticlesList(
             articles = state.articles,
-            onClick = {  }
+            onClick = navigateToDetails
         )
     }
 }
