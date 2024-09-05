@@ -45,8 +45,9 @@ Go to the [Releases](https://github.com/ManaswiniKundeti/ComposeNews/releases) t
 - Architecture
   - MVVM Architecture (View - ViewModel - Model)
   - Repository pattern
-- [Retrofit2](https://github.com/square/retrofit).
-- Hilt
+- [Retrofit2](https://github.com/square/retrofit)
+- [Paging 3](https://developer.android.com/topic/libraries/architecture/paging/v3-overview)
+- [Hilt](https://developer.android.com/training/dependency-injection/hilt-android)
 
 ## Architecture
 Compose News is based on the latest Googles recommended architecture pattern that focuses on unidirectional data flow. Details on the architecture can be found [here](https://developer.android.com/topic/architecture)
