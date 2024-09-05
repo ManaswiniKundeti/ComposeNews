@@ -14,6 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.text.font.FontWeight
 import com.example.composenews.R
+import com.example.composenews.domain.model.Article
 import com.example.composenews.presentation.common.ArticleCard
 import com.example.composenews.presentation.common.ArticlesList
 import com.example.composenews.presentation.navgraph.Route
@@ -22,7 +23,7 @@ import com.example.composenews.presentation.onboarding.Dimens.mediumPadding1
 @Composable
 fun BookmarkScreen(
     state: BookmarkState,
-    navigate:(String) -> Unit,
+    navigateToDetails:(Article) -> Unit,
 ) {
     Column(
         modifier = Modifier

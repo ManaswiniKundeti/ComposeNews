@@ -21,6 +21,7 @@ import com.example.composenews.presentation.bookmark.BookmarkScreen
 import com.example.composenews.presentation.bookmark.BookmarkViewModel
 import com.example.composenews.presentation.home.HomeScreen
 import com.example.composenews.presentation.home.HomeViewModel
+import com.example.composenews.presentation.newsNavigator.NewsNavigator
 import com.example.composenews.presentation.onboarding.OnboardingScreen
 import com.example.composenews.presentation.onboarding.OnboardingViewModel
 import com.example.composenews.presentation.search.SearchScreen
@@ -55,8 +56,9 @@ fun Navgraph(
 //                HomeScreen(articles = articles, navigate = {})
 //                val searchViewModel: SearchViewModel = hiltViewModel()
 //                SearchScreen(state = searchViewModel.state.value, event =  searchViewModel::onEvent)
-                val bookmarkViewModel: BookmarkViewModel = hiltViewModel()
-                BookmarkScreen(state = bookmarkViewModel.bookmarkState.value, navigate = {})
+//                val bookmarkViewModel: BookmarkViewModel = hiltViewModel()
+//                BookmarkScreen(state = bookmarkViewModel.bookmarkState.value, navigate = {})
+                NewsNavigator()
             }
         }
 

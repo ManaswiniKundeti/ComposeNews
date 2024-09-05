@@ -4,9 +4,9 @@ import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
+import androidx.room.Query
 import com.example.composenews.domain.model.Article
 import kotlinx.coroutines.flow.Flow
-import retrofit2.http.Query
 
 @Dao
 interface NewsDao {
@@ -17,7 +17,9 @@ interface NewsDao {
     @Delete
     suspend fun delete(article: Article)
 
-    @androidx.room.Query("SELECT * FROM Article")
+    @Query("SELECT * FROM Article")
     fun getArticles(): Flow<List<Article>>
 
+    @Query("SELECT * FROM Article WHERE url=:url")
+    suspend fun getArticle(url: String): Article?
 }

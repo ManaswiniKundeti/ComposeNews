@@ -4,7 +4,7 @@ import android.app.Application
 import androidx.room.Room
 import com.example.composenews.data.local.NewsDao
 import com.example.composenews.data.local.NewsDatabase
-import com.example.composenews.data.local.NewsTypeConverter
+import com.example.composenews.data.local.NewsTypeConvertor
 import com.example.composenews.data.manager.LocalUserManagerImpl
 import com.example.composenews.data.remote.NewsApi
 import com.example.composenews.data.repository.NewsRepositoryImpl
@@ -14,6 +14,7 @@ import com.example.composenews.domain.usecases.appEntry.AppEntryUsecases
 import com.example.composenews.domain.usecases.appEntry.ReadAppEntry
 import com.example.composenews.domain.usecases.appEntry.SaveAppEntry
 import com.example.composenews.domain.usecases.news.DeleteArticle
+import com.example.composenews.domain.usecases.news.GetArticle
 import com.example.composenews.domain.usecases.news.GetArticles
 import com.example.composenews.domain.usecases.news.GetNews
 import com.example.composenews.domain.usecases.news.NewsUsecases
@@ -76,7 +77,8 @@ object AppModule {
             searchNews = SearchNews(newsRepository),
             upsertArticle = UpsertArticle(newsDao),
             deleteArticle = DeleteArticle(newsDao),
-            getArticles = GetArticles(newsDao)
+            getArticles = GetArticles(newsDao),
+            getArticle = GetArticle(newsDao)
         )
     }
 
@@ -89,7 +91,7 @@ object AppModule {
             context = application,
             klass = NewsDatabase::class.java,
             name = NEWS_DATABASE_NAME
-        ).addTypeConverter(NewsTypeConverter())
+        ).addTypeConverter(NewsTypeConvertor())
             .fallbackToDestructiveMigration()
             .build()
     }
