@@ -1,17 +1,17 @@
-package com.example.composenews.data.repository
+package com.example.composenews.domain.repository
 
 import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.PagingData
-import com.example.composenews.data.local.NewsDao
-import com.example.composenews.data.remote.NewsApi
-import com.example.composenews.data.remote.NewsPagingSource
-import com.example.composenews.data.remote.SearchNewsPagingSource
-import com.example.composenews.domain.model.Article
-import com.example.composenews.domain.repository.NewsRepository
+import com.example.composenews.data.database.NewsDao
+import com.example.composenews.data.remoteApis.NewsApi
+import com.example.composenews.data.remoteApis.paging.NewsPagingSource
+import com.example.composenews.data.remoteApis.paging.SearchNewsPagingSource
+import com.example.composenews.data.database.model.Article
 import kotlinx.coroutines.flow.Flow
+import javax.inject.Inject
 
-class NewsRepositoryImpl(
+class NewsRepositoryImpl @Inject constructor(
     private val newsApi: NewsApi,
     private val newsDao: NewsDao
 ): NewsRepository {

@@ -1,4 +1,4 @@
-package com.example.composenews.domain.manager
+package com.example.composenews.data.dataStore
 
 import kotlinx.coroutines.flow.Flow
 

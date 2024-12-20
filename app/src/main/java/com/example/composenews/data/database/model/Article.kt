@@ -1,4 +1,4 @@
-package com.example.composenews.domain.model
+package com.example.composenews.data.database.model
 
 import android.os.Parcelable
 import androidx.room.Entity

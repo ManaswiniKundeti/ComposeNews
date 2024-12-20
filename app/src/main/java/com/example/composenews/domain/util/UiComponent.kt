@@ -1,4 +1,4 @@
-package com.example.composenews.util
+package com.example.composenews.domain.util
 
 sealed class UIComponent {
 

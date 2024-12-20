@@ -1,8 +1,9 @@
-package com.example.composenews.data.remote
+package com.example.composenews.data.remoteApis.paging
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
-import com.example.composenews.domain.model.Article
+import com.example.composenews.data.database.model.Article
+import com.example.composenews.data.remoteApis.NewsApi
 
 class SearchNewsPagingSource (
     val newsApi: NewsApi,

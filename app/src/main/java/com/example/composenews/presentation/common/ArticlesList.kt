@@ -10,7 +10,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.paging.LoadState
 import androidx.paging.compose.LazyPagingItems
-import com.example.composenews.domain.model.Article
+import com.example.composenews.data.database.model.Article
 import com.example.composenews.presentation.onboarding.Dimens.extraSmallPadding2
 import com.example.composenews.presentation.onboarding.Dimens.mediumPadding1
 import com.example.composenews.presentation.onboarding.Dimens.mediumPadding2

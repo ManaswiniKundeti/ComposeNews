@@ -1,4 +1,4 @@
-package com.example.composenews.data.manager
+package com.example.composenews.data.dataStore
 
 import android.content.Context
 import android.util.Log
@@ -7,9 +7,8 @@ import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.preferencesDataStore
-import com.example.composenews.domain.manager.LocalUserManager
-import com.example.composenews.util.Constants
-import com.example.composenews.util.Constants.USER_SETTINGS
+import com.example.composenews.domain.util.Constants
+import com.example.composenews.domain.util.Constants.USER_SETTINGS
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
@@ -19,7 +18,7 @@ import kotlinx.coroutines.flow.map
  */
 class LocalUserManagerImpl(
     private val context: Context
-) : LocalUserManager{
+) : LocalUserManager {
     override suspend fun saveAppEntry() {
         Log.d("LocalUserManagerImpl", "Saving app entry as true")
        context.dataStore.edit { settings ->

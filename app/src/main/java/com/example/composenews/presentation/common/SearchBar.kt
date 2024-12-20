@@ -29,7 +29,7 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.composenews.R
-import com.example.composenews.ui.theme.ComposeNewsTheme
+import com.example.composenews.presentation.theme.ComposeNewsTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

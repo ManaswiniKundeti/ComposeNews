@@ -23,10 +23,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.paging.compose.LazyPagingItems
 import com.example.composenews.R
-import com.example.composenews.domain.model.Article
+import com.example.composenews.data.database.model.Article
 import com.example.composenews.presentation.common.ArticlesList
 import com.example.composenews.presentation.common.SearchBar
-import com.example.composenews.presentation.navgraph.Route
 import com.example.composenews.presentation.onboarding.Dimens.mediumPadding1
 
 @OptIn(ExperimentalFoundationApi::class)

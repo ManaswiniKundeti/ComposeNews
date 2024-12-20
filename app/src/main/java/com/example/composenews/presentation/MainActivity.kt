@@ -1,4 +1,4 @@
-package com.example.composenews
+package com.example.composenews.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -13,16 +13,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.core.view.WindowCompat
-import androidx.lifecycle.lifecycleScope
-import com.example.composenews.data.local.NewsDao
-import com.example.composenews.domain.model.Article
-import com.example.composenews.domain.model.Source
 import com.example.composenews.presentation.navgraph.Navgraph
-import com.example.composenews.ui.theme.ComposeNewsTheme
+import com.example.composenews.presentation.theme.ComposeNewsTheme
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.launch
-import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {

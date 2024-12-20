@@ -23,7 +23,7 @@ import androidx.compose.ui.unit.dp
 import com.example.composenews.R
 import com.example.composenews.presentation.onboarding.Dimens.IconSize
 import com.example.composenews.presentation.onboarding.Dimens.extraSmallPadding2
-import com.example.composenews.ui.theme.ComposeNewsTheme
+import com.example.composenews.presentation.theme.ComposeNewsTheme
 
 @Composable
 fun NewsBottomNavigation(

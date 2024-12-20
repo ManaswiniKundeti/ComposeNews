@@ -1,14 +1,14 @@
-package com.example.composenews.di
+package com.example.composenews.app.di
 
 import android.app.Application
 import androidx.room.Room
-import com.example.composenews.data.local.NewsDao
-import com.example.composenews.data.local.NewsDatabase
-import com.example.composenews.data.local.NewsTypeConvertor
-import com.example.composenews.data.manager.LocalUserManagerImpl
-import com.example.composenews.data.remote.NewsApi
-import com.example.composenews.data.repository.NewsRepositoryImpl
-import com.example.composenews.domain.manager.LocalUserManager
+import com.example.composenews.data.database.NewsDao
+import com.example.composenews.data.database.NewsDatabase
+import com.example.composenews.data.database.NewsTypeConvertor
+import com.example.composenews.data.dataStore.LocalUserManagerImpl
+import com.example.composenews.data.remoteApis.NewsApi
+import com.example.composenews.domain.repository.NewsRepositoryImpl
+import com.example.composenews.data.dataStore.LocalUserManager
 import com.example.composenews.domain.repository.NewsRepository
 import com.example.composenews.domain.usecases.appEntry.AppEntryUsecases
 import com.example.composenews.domain.usecases.appEntry.ReadAppEntry
@@ -20,15 +20,14 @@ import com.example.composenews.domain.usecases.news.GetNews
 import com.example.composenews.domain.usecases.news.NewsUsecases
 import com.example.composenews.domain.usecases.news.SearchNews
 import com.example.composenews.domain.usecases.news.UpsertArticle
-import com.example.composenews.util.Constants.BASE_URL
-import com.example.composenews.util.Constants.NEWS_DATABASE_NAME
+import com.example.composenews.domain.util.Constants.BASE_URL
+import com.example.composenews.domain.util.Constants.NEWS_DATABASE_NAME
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.create
 import javax.inject.Singleton
 
 @Module

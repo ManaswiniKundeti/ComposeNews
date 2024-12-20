@@ -1,6 +1,6 @@
 package com.example.composenews.domain.usecases.appEntry
 
-import com.example.composenews.domain.manager.LocalUserManager
+import com.example.composenews.data.dataStore.LocalUserManager
 import kotlinx.coroutines.flow.Flow
 
 class ReadAppEntry(
