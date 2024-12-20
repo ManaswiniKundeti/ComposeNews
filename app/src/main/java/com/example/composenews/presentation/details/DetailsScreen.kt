@@ -25,14 +25,13 @@ import androidx.compose.ui.tooling.preview.Preview
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
 import com.example.composenews.R
-import com.example.composenews.domain.model.Article
-import com.example.composenews.domain.model.Source
+import com.example.composenews.data.database.model.Article
+import com.example.composenews.data.database.model.Source
 import com.example.composenews.presentation.details.components.DetailsTopBar
-import com.example.composenews.presentation.navgraph.Route
 import com.example.composenews.presentation.onboarding.Dimens.ArticleImageHeight
 import com.example.composenews.presentation.onboarding.Dimens.mediumPadding1
-import com.example.composenews.ui.theme.ComposeNewsTheme
-import com.example.composenews.util.UIComponent
+import com.example.composenews.presentation.theme.ComposeNewsTheme
+import com.example.composenews.domain.util.UIComponent
 
 @Composable
 fun DetailsScreen(

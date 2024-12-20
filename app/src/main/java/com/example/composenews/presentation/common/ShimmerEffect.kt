@@ -29,7 +29,7 @@ import com.example.composenews.R
 import com.example.composenews.presentation.onboarding.Dimens.ArticleCardSize
 import com.example.composenews.presentation.onboarding.Dimens.extraSmallPadding
 import com.example.composenews.presentation.onboarding.Dimens.mediumPadding1
-import com.example.composenews.ui.theme.ComposeNewsTheme
+import com.example.composenews.presentation.theme.ComposeNewsTheme
 
 @SuppressLint("ModifierFactoryUnreferencedReceiver")
 fun Modifier.shimmerEffect() = composed {

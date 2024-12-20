@@ -8,10 +8,9 @@ import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.paging.compose.collectAsLazyPagingItems
-import com.example.composenews.domain.model.Article
+import com.example.composenews.data.database.model.Article
 import com.example.composenews.presentation.common.ArticlesList
 import com.example.composenews.presentation.common.SearchBar
-import com.example.composenews.presentation.navgraph.Route
 import com.example.composenews.presentation.onboarding.Dimens.mediumPadding1
 
 @Composable

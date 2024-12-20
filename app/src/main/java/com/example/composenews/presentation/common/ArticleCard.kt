@@ -27,8 +27,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
 import com.example.composenews.R
-import com.example.composenews.domain.model.Article
-import com.example.composenews.domain.model.Source
+import com.example.composenews.data.database.model.Article
+import com.example.composenews.data.database.model.Source
 import com.example.composenews.presentation.onboarding.Dimens.ArticleCardSize
 import com.example.composenews.presentation.onboarding.Dimens.SmallIconSize
 import com.example.composenews.presentation.onboarding.Dimens.extraSmallPadding
@@ -103,5 +103,6 @@ fun ArticleCardPreview() {
             title = "title is BBC NEws",
             url = "",
             urlToImage = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.bbc.co.uk%2Fbranding&psig=AOvVaw2OnEv6_ENQrAM8XKKeFOvI&ust=1725420051988000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJjXo-DopYgDFQAAAAAdAAAAABAJ"
-        )) {}
+        )
+    ) {}
 }

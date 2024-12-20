@@ -20,7 +20,7 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import androidx.paging.compose.collectAsLazyPagingItems
 import com.example.composenews.R
-import com.example.composenews.domain.model.Article
+import com.example.composenews.data.database.model.Article
 import com.example.composenews.presentation.bookmark.BookmarkScreen
 import com.example.composenews.presentation.bookmark.BookmarkViewModel
 import com.example.composenews.presentation.details.DetailsScreen

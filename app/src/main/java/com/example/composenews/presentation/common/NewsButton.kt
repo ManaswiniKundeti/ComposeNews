@@ -10,7 +10,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import com.example.composenews.ui.theme.WhiteGray
+import com.example.composenews.presentation.theme.WhiteGray
 
 @Composable
 fun NewsButton(

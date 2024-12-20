@@ -5,9 +5,9 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.composenews.domain.model.Article
+import com.example.composenews.data.database.model.Article
 import com.example.composenews.domain.usecases.news.NewsUsecases
-import com.example.composenews.util.UIComponent
+import com.example.composenews.domain.util.UIComponent
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject

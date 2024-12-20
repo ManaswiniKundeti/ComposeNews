@@ -19,7 +19,7 @@ import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.composenews.R
-import com.example.composenews.ui.theme.ComposeNewsTheme
+import com.example.composenews.presentation.theme.ComposeNewsTheme
 import dagger.Provides
 
 @OptIn(ExperimentalMaterial3Api::class)

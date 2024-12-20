@@ -12,7 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import com.example.composenews.presentation.onboarding.Dimens.IndicatorSize
-import com.example.composenews.ui.theme.BlueGray
+import com.example.composenews.presentation.theme.BlueGray
 
 @Composable
 fun PageIndicator(

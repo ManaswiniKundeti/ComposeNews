@@ -1,6 +1,6 @@
 package com.example.composenews.presentation.details
 
-import com.example.composenews.domain.model.Article
+import com.example.composenews.data.database.model.Article
 
 sealed class DetailsEvent {
 

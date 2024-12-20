@@ -21,7 +21,7 @@ import com.example.composenews.R
 import com.example.composenews.presentation.onboarding.Dimens.mediumPadding1
 import com.example.composenews.presentation.onboarding.Page
 import com.example.composenews.presentation.onboarding.pages
-import com.example.composenews.ui.theme.ComposeNewsTheme
+import com.example.composenews.presentation.theme.ComposeNewsTheme
 
 @Composable
 fun OnboardingPage(
