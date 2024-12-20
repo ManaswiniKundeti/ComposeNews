@@ -9,8 +9,9 @@ import com.example.composenews.data.remoteApis.paging.NewsPagingSource
 import com.example.composenews.data.remoteApis.paging.SearchNewsPagingSource
 import com.example.composenews.data.database.model.Article
 import kotlinx.coroutines.flow.Flow
+import javax.inject.Inject
 
-class NewsRepositoryImpl(
+class NewsRepositoryImpl @Inject constructor(
     private val newsApi: NewsApi,
     private val newsDao: NewsDao
 ): NewsRepository {

@@ -1,4 +1,4 @@
-package com.example.composenews.app
+package com.example.composenews
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
